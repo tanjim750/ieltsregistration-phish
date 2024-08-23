@@ -1,0 +1,340 @@
+<html lang="en" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+   {% load static %}
+   <head>
+     
+      <meta charset="utf-8">
+      <meta name="robots" content="noindex, nofollow">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="Cache-Control" content="max-age=0, must-revalidate">
+      <meta http-equiv="Pragma" content="no-cache">
+      <meta http-equiv="Expires" content="0">
+      <meta name="description" content="Register online for an IELTS test with the British Council. IELTS is the world's leading assessment of English communicative ability – testing your English listening, reading, writing and speaking.">
+      <meta name="keywords" content="IELTS,ielts test,learning english,english test,english language,British Council,international student, online registration, ielts online, british council ielts">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta property="og:image" content="https://bccdn.azureedge.net/favicons/b2c/britishcouncil_og_logo.jpg">
+      <meta name="HandheldFriendly" content="true">
+      <meta name="MobileOptimized" content="320">
+      <title>IELTS Registration</title>
+      <base href="/">
+      <meta name="msapplication-TileColor" content="#2d89ef">
+      <meta name="theme-color" content="#346e9e">
+      <meta name="msapplication-navbutton-color" content="#346e9e">
+      <meta name="apple-mobile-web-app-status-bar-style" content="#346e9e">
+      <link rel="shortcut icon" href="{% static 'img/favicon.png' %}" type="image/x-icon">
+      <link rel="preconnect" href="https://bccdn.azureedge.net">
+      <link rel="preconnect" href="https://www.googletagmanager.com">
+      <link rel="preconnect" href="https://www.google-analytics.com">
+      <!-- prettier-ignore -->
+      <link rel="stylesheet" href="https://bccdn.azureedge.net/dev/solas/0.1.6-bc.5/bc-ors-theme.css">
+      <!-- prettier-ignore -->
+      <link rel="preload" href="https://sui.britishcouncil.org/0.1.7/fonts/BritishCouncilSansW05-Headline.woff2" as="font" type="font/woff2" crossorigin="">
+      <!-- prettier-ignore -->
+      <link rel="preload" href="https://sui.britishcouncil.org/0.1.7/fonts/BritishCouncilSansW08-Rg.woff2" as="font" type="font/woff2" crossorigin="">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;family=Work+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+      <style>
+         body {
+         font-family: 'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif !important;
+         color: #333333;
+         }
+         label {
+         font-weight: 400 !important;
+         }
+         h1,
+         h2,
+         h3 {
+         font-family: 'Work Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif !important;
+         font-weight: 700 !important;
+         }
+
+         .centered-div {
+            width: 50%; /* or any desired width */
+            margin: 0 auto;
+          }
+
+          .select-search {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 400px; /* Adjust width as needed */
+            margin: 0 auto;
+            background-color: white;
+          }
+          
+          .select-search__value {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            
+            padding: 8px 12px;
+            
+          }
+          
+          .select-search__icon {
+            margin-left: 5px;
+            margin-right: 8px; /* Space between icon and input */
+            width: 24px;
+            height: 24px;
+          }
+          
+          .select-search__input {
+            flex: 1;
+            border: none;
+            background: none;
+            outline: none;
+            font-size: 16px;
+            color: #333; /* Text color */
+            padding: 4px 0; /* Padding to make input taller */
+          }
+          
+          .select-search__indicator {
+            margin-left: 8px; /* Space between input and indicator */
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+          }
+          
+          .select-search__indicator svg, 
+          .select-search__icon svg {
+            width: 100%;
+            height: 100%;
+          }
+          
+          button {
+            border: none;
+            display: flex;
+            padding: 0.75rem 1.5rem;
+            background-color: #488aec;
+            color: #ffffff;
+            font-size: 0.75rem;
+            line-height: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            text-align: center;
+            text-transform: uppercase;
+            vertical-align: middle;
+            align-items: center;
+            border-radius: 0.5rem;
+            user-select: none;
+            gap: 0.75rem;
+            box-shadow: 0 4px 6px -1px #488aec31, 0 2px 4px -1px #488aec17;
+            transition: all 0.6s ease;
+            
+          }
+          
+          button:hover {
+            box-shadow: 0 10px 15px -3px #488aec4f, 0 4px 6px -2px #488aec17;
+          }
+          
+          button:focus,
+          button:active {
+            opacity: 0.85;
+            box-shadow: none;
+          }
+      </style>
+      <link rel="shortcut icon" href="#">
+      
+      <style type="text/css">.rmsc{--rmsc-main: #4285f4;--rmsc-hover: #f1f3f5;--rmsc-selected: #e2e6ea;--rmsc-border: #ccc;--rmsc-gray: #aaa;--rmsc-bg: #fff;--rmsc-p: 10px;--rmsc-radius: 4px;--rmsc-h: 38px}.rmsc *{box-sizing:border-box;transition:all .2s ease}.rmsc .gray{color:var(--rmsc-gray)}.rmsc .dropdown-content{position:absolute;z-index:1;top:100%;width:100%;padding-top:8px}.rmsc .dropdown-content .panel-content{overflow:hidden;border-radius:var(--rmsc-radius);background:var(--rmsc-bg);box-shadow:0 0 0 1px #0000001a,0 4px 11px #0000001a}.rmsc .dropdown-container{position:relative;outline:0;background-color:var(--rmsc-bg);border:1px solid var(--rmsc-border);border-radius:var(--rmsc-radius)}.rmsc .dropdown-container[aria-disabled=true]:focus-within{box-shadow:var(--rmsc-gray) 0 0 0 1px;border-color:var(--rmsc-gray)}.rmsc .dropdown-container:focus-within{box-shadow:var(--rmsc-main) 0 0 0 1px;border-color:var(--rmsc-main)}.rmsc .dropdown-heading{position:relative;padding:0 var(--rmsc-p);display:flex;align-items:center;width:100%;height:var(--rmsc-h);cursor:default;outline:0}.rmsc .dropdown-heading .dropdown-heading-value{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1}.rmsc .clear-selected-button{cursor:pointer;background:none;border:0;padding:0;display:flex}.rmsc .options{max-height:260px;overflow-y:auto;margin:0;padding-left:0}.rmsc .options li{list-style:none;margin:0}.rmsc .select-item{box-sizing:border-box;cursor:pointer;display:block;padding:var(--rmsc-p);outline-offset:-1px;outline-color:var(--rmsc-primary)}.rmsc .select-item:hover{background:var(--rmsc-hover)}.rmsc .select-item.selected{background:var(--rmsc-selected)}.rmsc .no-options{padding:var(--rmsc-p);text-align:center;color:var(--rmsc-gray)}.rmsc .search{width:100%;position:relative;border-bottom:1px solid var(--rmsc-border)}.rmsc .search input{background:none;height:var(--rmsc-h);padding:0 var(--rmsc-p);width:100%;outline:0;border:0;font-size:1em}.rmsc .search input:focus{background:var(--rmsc-hover)}.rmsc .search-clear-button{cursor:pointer;position:absolute;top:0;right:0;bottom:0;background:none;border:0;padding:0 calc(var(--rmsc-p) / 2)}.rmsc .search-clear-button [hidden]{display:none}.rmsc .item-renderer{display:flex;align-items:baseline}.rmsc .item-renderer input{margin:0 5px 0 0}.rmsc .item-renderer.disabled{opacity:.5}.rmsc .spinner{animation:rotate 2s linear infinite}.rmsc .spinner .path{stroke:var(--rmsc-border);stroke-width:4px;stroke-linecap:round;animation:dash 1.5s ease-in-out infinite}@keyframes rotate{to{transform:rotate(360deg)}}@keyframes dash{0%{stroke-dasharray:1,150;stroke-dashoffset:0}50%{stroke-dasharray:90,150;stroke-dashoffset:-35}to{stroke-dasharray:90,150;stroke-dashoffset:-124}}</style>
+      <style type="text/css" id="qual_style-zhx"></style>
+      <style type="text/css" id="qual_style-zmf"></style>
+      <style data-emotion="css" data-s=""></style>
+      <style data-emotion="css-global" data-s=""></style>
+      <link href="https://bccdn.azureedge.net/dev/solas/0.1.6-bc.5/bc-ors-theme.css" rel="stylesheet" data-react-helmet="true">
+      <style type="text/css" data-react-helmet="true">
+         .message
+         {
+         background: none;
+         border-style: none;
+         border-width: 0;
+         color: #FFF;
+         padding: 6px 8px 6px 6px;
+         margin: 4px 20px;
+         }
+         .embeddedServiceHelpButton .helpButton .uiButton
+         {
+         background-color: #222222;
+         font-family: "Open Sans" , "Arial", sans-serif;
+         }
+         .embeddedServiceHelpButton .helpButton .uiButton.helpButtonDisabled
+         {
+         background-color: #CCC;
+         }
+         .embeddedServiceHelpButton .helpButton .uiButton:focus
+         {
+         outline: 1px solid #222222;
+         }
+         h2[embeddedService-chatHeader_chatHeader] {
+         color: white
+         }
+         svg[lightning-primitiveIcon_primitiveIcon] {
+         display: none;
+         }
+         embeddedservice-chat-header header h2 {
+         color: white;
+         }
+         embeddedservice-chat-header lightning-primitive-icon svg:first-child:not(:only-child){
+         display: none;
+         }
+         header.sidebarHeader img[embeddedService-chatHeader_chatHeader] {
+         max-height: 24px;
+         max-width: 24px;
+         }
+         .embeddedServiceSidebarMinimizedDefaultUI .minimizedImage span.uiImage {
+         width: 20px;
+         height: 20px;
+         }
+         .embeddedServiceSidebarMinimizedDefaultUI .minimizedImage span.uiImage img {
+         width: 20px;
+         height: 20px;
+         border-radius: unset;
+         }
+         button.embeddedServiceSidebarMinimizedDefaultUI {
+         max-width: 20em;
+         width: 235px;
+         }
+      </style>
+      
+   </head>
+   <body data-new-gr-c-s-check-loaded="14.1191.0" data-gr-ext-installed="">
+      
+      
+      
+      <!-- OneTrust Cookies Consent Notice end -->
+      <!-- Google Tag Manager (noscript) -->
+      <!-- prettier-ignore -->
+      <!-- End Google Tag Manager (noscript) -->
+      <!-- Qualaroo survey script -->
+      
+      <!-- End Qualaroo survey script -->
+      <!-- prettier-ignore -->
+      <!--[if IE]>
+      <div style="background: #000; text-align: center; position: absolute; top: 0px; width: 100%; color: #FFF; padding: 1em;">You are running an un-supported version of Internet Explorer. Please use other browser.</div>
+      <![endif]-->
+      <!-- Display Upgrade Message for IE 10 -->
+      <div id="root">
+         <div id="app-container" class="ielts-slogan ielts-branding flex">
+            <header class="navbar navbar-default compact-mobile-mode css-uiewtj">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-xs-12">
+                        <div class="navbar-header">
+                           <div class="navbar-brand"><a class="bc-brand-logo css-16npy7t" aria-label="Go to the main page" href="/">British Council</a></div>
+                        </div>
+                        <div class="bc-btn-navbar-group" role="group">
+                           <button type="button" class="btn bc-btn-menu bc-menu-toggle ">
+                              <span class="menu-label" data-testid="menu-nav-button">Menu</span>
+                              <div class="menu-icon"><span></span><span></span><span></span><span></span></div>
+                           </button>
+                        </div>
+                        <div role="navigation" class="">
+                           <ul class="nav navbar-nav bc-microsite-nav navbar-nav-with-bg navbar-nav-primary"></ul>
+                           <ul class="nav navbar-nav bc-navbar-support">
+                              <li><button data-testid="nav.login" type="button" class="css-15ipcig">Test Taker Portal</button></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </header>
+            <div class="app-contents centered-div">
+               <article>
+                  <div class="css-1jbjvh5">
+                     <div class="breadcrumbs css-1yxs14j">
+                        <a class="link notranslate css-uj6efq" title="Change test type" data-testid="link-changeExamType" href="/">IELTS Academic</a> 
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" class="divider" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+                        </svg>
+                     </div>
+                     <div class="page-header css-s5c0ew" data-testid="page-heading">
+                        <h1>Find a test</h1>
+                     </div>
+                  </div>
+                  <div class="css-1gxoxnf" style="width: 100%; background-color: #e5eff8; padding:30px 0 10px 0">
+                     <div class="css-17gwejz ">
+                        <div class="css-1gxoxnf">
+                           <div data-testid="page-container" class="css-56tlfn centered-div" style="width: 70%;">
+                              <h2>Where would you like to take your test?</h2>
+                              <div class="css-1rl1l1w"><span>Search in: <b data-testid="selected-country">Bangladesh</b></span></div><br>
+                              <label class="css-1urhwyb">
+
+                                 <form action="{% url 'register' %}" method="get">
+
+                                 <div class="css-ip5o5d" style="width: 100%;">
+                                    <div class="select-search" id="select-location">
+                                       <div class="select-search__icon">
+                                          <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 95 95">
+                                             <path d="M43.542 75.208c17.489 0 31.667-14.177 31.667-31.666 0-17.49-14.178-31.667-31.667-31.667-17.49 0-31.667 14.178-31.667 31.667s14.178 31.666 31.667 31.666zM83.125 83.125L65.906 65.906" stroke="#23085A" stroke-width="7.667" stroke-linecap="round" stroke-linejoin="round"></path>
+                                          </svg>
+                                       </div>
+                                       <div class="select-search__value">
+                                          <select id="" style="width: 100%; border: none; outline: none; background-color: white;">
+                                             <option value="" selected disabled>Select Your City</option>
+                                             <option value="">Chattogram</option>
+                                             <option value="">Cumilla</option> 
+                                             <option value="dhaka">Dhaka</option>
+                                             <option value="Feni">Feni</option>
+                                          </select>
+                                          <div class="select-search__indicator">
+                                             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="24px" width="24px" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z"></path>
+                                             </svg>
+                                          </div>
+                                          
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <br>
+                                 <div class="css-ip5o5d" style="width: 100%;">
+                                    <label>What is Your name?</label><br>
+                                    <input type="text" placeholder="Enter your name" style="background-color: white; border: none; outline: none;" required>
+                                 </div><br>
+
+                                 <div class="css-ip5o5d" style="width: 100%;">
+                                    <label>Give Your contact number?</label><br>
+                                    <input type="text" placeholder="Enter your number" style="background-color: white; border: none; outline: none;" required>
+                                 </div> <br>
+
+                                 <div class="css-ip5o5d" style="width: 100%;">
+                                    <label>What is Your current address?</label><br>
+                                    <input type="text" placeholder="Enter your address" style="background-color: white; border: none; outline: none;" required>
+                                 </div><br>
+
+                              </label>
+                              <br>
+
+                              <button type="submit">
+                                 <b style="color: white;">Get free</b>
+                              </button>
+
+                           </form>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </article>
+            </div>
+            
+         </div>
+         <footer class="bc-footer slim-footer css-1ymdl9d">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xs-12">
+                     <ul class="bc-site-links">
+                        <li><a href="https://www.britishcouncil.org/terms" target="_blank" rel="noopener noreferrer" title="(opens new window)" data-testid="terms-of-use-link" class="css-x7dfkz">Terms of use</a></li>
+                        <li><a href="https://www.britishcouncil.org/accessibility" target="_blank" rel="noopener noreferrer" title="(opens new window)" data-testid="accessibility-link" class="css-x7dfkz">Accessibility</a></li>
+                        <li><a href="https://www.britishcouncil.org/privacy-cookies" target="_blank" rel="noopener noreferrer" title="(opens new window)" data-testid="privacy-and-cookies-link" class="css-x7dfkz">Privacy and cookies</a></li>
+                        <li><a href="https://www.britishcouncil.org/privacy-cookies/data-protection" target="_blank" rel="noopener noreferrer" title="(opens new window)" data-testid="data-protection-link" class="css-x7dfkz">Data Protection</a></li>
+                     </ul>
+                     <div class="bc-copyright">
+                        <div>© 2024 British Council</div>
+                        <p data-testid="copyright-paragraf">The United Kingdom's international organisation for cultural relations and educational opportunities.<br>A registered charity: 209131 (England and Wales) SC037733 (Scotland).</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </footer>
+      </div>
+</body>
+</html>
